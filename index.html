@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calender</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="bs-cal-container">
+        <div class="bs-cal-body container">
+            <div class="bs-cal-frame">
+                <div class="bs-cal-calender">
+                    <div class="bs-cal-calender__heading">
+                        <h2>
+                            Basic Calender
+                        </h2>
+                        <p>Developed by Basic Themer</p>
+                    </div>
+
+                    <div class="bs-cal-calender__body">
+                        <div class="bs-cal-body-left">
+                            <div class="bs-cal">
+                                <div class="bs-cal__header" id="bs-cal-header">
+                                    
+                                    <div class="bs-cal__header--button">
+                                        <button class="bs-cal__header--button-previous" id="bs-cal-header-button-previous"><img src="./assets/images/calender-icon/calender-head-left-icon.svg" alt=""></button>
+                                        <div class="bs-cal__header--month" id="bs-cal-header-month"></div>
+                                        <button class="bs-cal__header--button-next" id="bs-cal-header-button-next"><img src="./assets/images/calender-icon/calender-head-right-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="bs-cal__weekdays" id="bs-cal-weekdays">
+                                    <div class="bs-cal__weekdays--day"><p>Sunday</p></div>
+                                    <div class="bs-cal__weekdays--day"><p>Monday</p></div>
+                                    <div class="bs-cal__weekdays--day"><p>Tuesday</p></div>
+                                    <div class="bs-cal__weekdays--day"><p>Wedneday</p></div>
+                                    <div class="bs-cal__weekdays--day"><p>Thursday</p></div>
+                                    <div class="bs-cal__weekdays--day"><p>Friday</p></div>
+                                    <div class="bs-cal__weekdays--day"><p>Saturday</p></div>
+                                </div>
+                                <div class="bs-cal__days" id="bs-cal-days"></div>
+                            </div>
+                        </div>
+                        <div class="bs-cal-right">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/bs-calender.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

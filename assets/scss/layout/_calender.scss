@@ -1,0 +1,112 @@
+.bs-cal {
+    max-width: 60rem;
+    box-shadow: 0px 0px 26px #0000000d;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    background: #fff;
+
+    &__header {
+
+        &--month {
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            width: 14rem;
+            text-align: center;
+            color: $black;
+        }
+
+        &--button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 1rem;
+            border-bottom: 1px solid #eaeaea;
+            padding-top: 0.5rem;
+
+            &-next {
+                border-radius: 0 2rem 2rem 0;
+            }
+
+            &-previous {
+                border-radius: 2rem 0 0 2rem;
+            }
+
+            button {
+                padding: .5rem .5rem;
+                width: 5rem;
+                background: #b1b1b12b;
+                border: 1px solid gainsboro;
+
+                img {
+                    width: 1rem;
+
+                }
+            }
+        }
+    }
+
+    &__weekdays {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        &--day {
+            width: 7.14rem;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-right: 1.3rem;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $black;
+            }
+        }
+    }
+
+    &__days {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .day-box {
+            width: 7.14rem;
+            text-align: center;
+            height: 6rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px solid #dcdcdc52;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: left;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                background: $blue;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+
+            &:not(:nth-child(7n)) {
+                margin-right: 1.3rem;
+            }
+
+            &.empty-box {
+                background: #dcdcdc52;
+                cursor:none;
+            }
+            &.today{
+                color: #fff;
+                background: $purple;
+            }
+        }
+    }
+}

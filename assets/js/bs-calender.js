@@ -40,7 +40,7 @@ function load(){
         dayBox.classList.add('day-box');
         if(i > paddingDays){
             dayBox.innerText = i - paddingDays;
-            if(date === (i - paddingDays)){
+            if(date === (i - paddingDays) ){
                 dayBox.classList.add('today');
             }
             dayBox.addEventListener("click", ()=>{
